@@ -72,7 +72,7 @@ if(NOT VERSION_SUFFIX)
   endif()
 endif()
 
-project(DevilutionX
+project(Rogueablo
   VERSION ${VERSION_NUM}
   LANGUAGES C CXX)
 set(PROJECT_VERSION_WITH_SUFFIX "${VERSION_PREFIX}${VERSION_SUFFIX}")
@@ -693,3 +693,4 @@ if(UWP_LIB)
   get_target_property(_linked_objects libdevilutionx LINKED_OBJECTS)
   target_sources(libdevilutionx PRIVATE ${_linked_objects})
 endif()
+
