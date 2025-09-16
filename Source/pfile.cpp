@@ -57,8 +57,8 @@ std::string GetSavePath(uint32_t saveNum, std::string_view savePrefix = {})
 {
 	return StrCat(paths::PrefPath(), savePrefix,
 	    gbIsSpawn
-	        ? (gbIsMultiplayer ? "share_" : "spawn_")
-	        : (gbIsMultiplayer ? "multi_" : "single_"),
+	        ? (gbIsMultiplayer ? "rg_share_" : "rg_spawn_")
+	        : (gbIsMultiplayer ? "rg_multi_" : "rg_single_"),
 	    saveNum,
 #ifdef UNPACKED_SAVES
 	    gbIsHellfire ? "_hsv" DIRECTORY_SEPARATOR_STR : "_sv" DIRECTORY_SEPARATOR_STR
@@ -813,4 +813,5 @@ void pfile_update(bool forceSave)
 }
 
 } // namespace devilution
+
 
