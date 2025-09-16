@@ -41,10 +41,10 @@
 
 namespace devilution {
 
-#define PASSWORD_SPAWN_SINGLE "adslhfb1"
-#define PASSWORD_SPAWN_MULTI "lshbkfg1"
-#define PASSWORD_SINGLE "xrgyrkj1"
-#define PASSWORD_MULTI "szqnlsk1"
+#define PASSWORD_SPAWN_SINGLE "rgslhfb1"
+#define PASSWORD_SPAWN_MULTI "rghbkfg1"
+#define PASSWORD_SINGLE "rggyrkj1"
+#define PASSWORD_MULTI "rgqnlsk1"
 
 bool gbValidSaveFile;
 
@@ -813,3 +813,4 @@ void pfile_update(bool forceSave)
 }
 
 } // namespace devilution
+
